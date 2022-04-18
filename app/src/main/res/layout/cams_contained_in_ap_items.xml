@@ -12,7 +12,7 @@
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_linked_camera_black_24dp"
+        android:src="@drawable/ic_linked_camera_black_24dp"
         android:scaleType="center"
         android:contentDescription="camera_icon" />
     <TextView
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:scaleType="center"
-        app:srcCompat="@drawable/ic_hourglass_empty_black_24dp" />
+        android:src="@drawable/ic_hourglass_empty_black_24dp" />
 
     <ImageView
         android:id="@+id/cams_contained_in_ap_lists_audio_icon"
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="audio"
-        app:srcCompat="@drawable/ic_mic_off_black_24dp"
+        android:src="@drawable/ic_mic_off_black_24dp"
         android:scaleType="center" />
 
 </LinearLayout>

@@ -17,10 +17,9 @@
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_height="?android:actionBarSize"
+                android:background="@color/colorPrimary"
+                android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
                 />
         </android.support.design.widget.AppBarLayout>
 
@@ -28,9 +27,10 @@
             android:id="@+id/fab_start_page"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/activity_horizontal_margin"
-            app:srcCompat="@drawable/ic_wifi_tethering_white_24dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <!--            app:srcCompat="@drawable/ic_wifi_tethering_white_24dp"-->
 
         <include layout="@layout/part_start_op_major" />
 

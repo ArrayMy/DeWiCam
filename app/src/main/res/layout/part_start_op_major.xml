@@ -7,8 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="1dp"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    android:orientation="vertical">
+<!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
 
     <ImageView
         android:id="@+id/imageview_start"
@@ -24,10 +25,10 @@
         android:contentDescription="@string/ui_description_logo"
         android:paddingBottom="10dp"
         android:scaleType="centerInside"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:con layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/launcher_icon2" />
+        android:src="@drawable/launcher_icon2" />
 
 
     <ImageView
@@ -188,11 +189,13 @@
         android:layout_marginRight="8dp" />
 
     <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/guideline2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintGuide_begin="36dp"
-        android:orientation="vertical" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
